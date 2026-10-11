@@ -137,7 +137,7 @@ export const coupleData = {
   timeline: [
     {
       id: 1,
-      date: "6 Nov 2026",
+      date: "10 Nov 2025",
       title: "When We First Met",
       highlight: "Woh Pehla Lamha ✨",
       description: "Jab hum pehli baar mile aur meri duniya mein ek nayi roshni aayi. Us din pata nahi tha ki tum meri poori zindagi ban jaogi.",

@@ -23,8 +23,20 @@ const iconComponents = {
 
 export default function StoryTimeline() {
   const [timelineItems, setTimelineItems] = useState(() => {
-    const saved = localStorage.getItem('akshaj_neha_timeline');
-    return saved ? JSON.parse(saved) : coupleData.timeline;
+    try {
+      const saved = localStorage.getItem('akshaj_neha_timeline');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        return parsed.map((item) =>
+          item.id === 1 && item.date === '6 Nov 2026'
+            ? { ...item, date: '10 Nov 2025' }
+            : item
+        );
+      }
+    } catch {
+      // fallback
+    }
+    return coupleData.timeline;
   });
 
   const [editingItem, setEditingItem] = useState(null);

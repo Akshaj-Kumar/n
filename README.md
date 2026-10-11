@@ -43,7 +43,7 @@ A deeply romantic, emotional, cinematic couple website created with all of Aksha
 7. **Our Love Story Timeline 💞**:
    - Interactive timeline titled **“Our Little Love Story”**.
    - 4 Milestones:
-     - *When we first met* (6 Nov 2026)
+     - *When we first met* (10 Nov 2025)
      - *Our favourite memory* (“jab bhi hum sath hote hai every memory is my favourite”)
      - *Our present journey* (“lovebirds joki ladte and pyaar krte hai or ek dusre ke bina reh nhi sakte meri rasmalai hai tu my future wify”)
      - *Our dreams for the future* (“future me dono ki ek family ho jisme hum khush rhe”)
