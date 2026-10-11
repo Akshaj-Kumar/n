@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --romantic-dark: #070104;
+    --romantic-burgundy: #17040c;
+    --romantic-wine: #2a0716;
+    --romantic-crimson: #881337;
+    --romantic-rose: #e11d48;
+    --romantic-blush: #fda4af;
+    --romantic-gold: #f59e0b;
+  }
+
+  body {
+    background-color: #070104;
+    color: #ffe4e6;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-handwriting {
+    font-family: 'Great Vibes', cursive;
+  }
+}
+
+/* Custom romantic glow & glassmorphism utilities */
+.glass-panel {
+  background: rgba(26, 5, 14, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 114, 182, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 0 16px rgba(244, 63, 94, 0.05);
+}
+
+.glass-panel-gold {
+  background: rgba(30, 8, 16, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  box-shadow: 0 10px 40px -10px rgba(251, 191, 36, 0.15);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(244, 114, 182, 0.45);
+  box-shadow: 0 20px 40px -15px rgba(225, 29, 72, 0.35), 0 0 25px rgba(244, 63, 94, 0.2);
+}
+
+.romantic-glow-text {
+  text-shadow: 0 0 20px rgba(244, 63, 94, 0.6), 0 0 40px rgba(225, 29, 72, 0.3);
+}
+
+.gold-glow-text {
+  text-shadow: 0 0 15px rgba(251, 191, 36, 0.6), 0 0 30px rgba(245, 158, 11, 0.3);
+}
+
+.romantic-gradient-bg {
+  background: radial-gradient(circle at 50% 20%, #2a0716 0%, #15030b 50%, #070104 100%);
+}
+
+.hero-mesh-gradient {
+  background: 
+    radial-gradient(at 0% 0%, rgba(225, 29, 72, 0.22) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(136, 19, 55, 0.3) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(76, 5, 25, 0.25) 0px, transparent 70%),
+    radial-gradient(at 100% 100%, rgba(251, 191, 36, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(225, 29, 72, 0.15) 0px, transparent 50%),
+    #070104;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080205;
+}
+::-webkit-scrollbar-thumb {
+  background: #4c0519;
+  border-radius: 9999px;
+  border: 2px solid #080205;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9f1239;
+}
+
+/* Heartbeat pulse animation */
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.18); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.15); }
+  70% { transform: scale(1); }
+}
+
+.animate-heart-beat {
+  animation: heartBeat 2s infinite ease-in-out;
+}
+
+/* Letter parchment styling */
+.parchment {
+  background: linear-gradient(135deg, #1f0612 0%, #13030b 100%);
+  border: 1px solid rgba(244, 114, 182, 0.25);
+  box-shadow: 
+    0 25px 60px -15px rgba(0, 0, 0, 0.8),
+    inset 0 0 40px rgba(136, 19, 55, 0.25);
+}
